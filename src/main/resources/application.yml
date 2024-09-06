@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: jwt-impl
+  datasource:
+    url: jdbc:sqlite:sqlite
+    username: admin
+    password: admin
+    driverClassName: org.sqlite.JDBC
+  jpa:
+    show-sql: true
+    open-in-view: false
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto: update
+
+security:
+  jwt:
+    secret-key: 9c2169ccf8aee13ba405388c4627c7943c42b72ee1cec7792c1003c6a67ba6a6
+    expiration-time: 3600000
